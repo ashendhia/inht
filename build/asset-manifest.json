@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7f1a22f.css",
+    "main.js": "/static/js/main.2a391322.js",
+    "static/media/testimonials.jpg": "/static/media/testimonials.41546aeda54cda504029.jpg",
+    "static/media/home.png": "/static/media/home.0f7effb05b9671303653.png",
+    "static/media/formations.png": "/static/media/formations.f04fb05e360cc78c8942.png",
+    "static/media/contact.jpg": "/static/media/contact.0a42cc1b418f93b0bee1.jpg",
+    "static/media/inht.jpg": "/static/media/inht.e022f03cc99ab8ebca9f.jpg",
+    "static/media/Avenir LT Std 85 Heavy.otf": "/static/media/Avenir LT Std 85 Heavy.d1a180cf4bf435707e5d.otf",
+    "static/media/Avenir LT Std 65 Medium.otf": "/static/media/Avenir LT Std 65 Medium.adcbfbb892596d80fae1.otf",
+    "static/media/Avenir LT Std 55 Roman.otf": "/static/media/Avenir LT Std 55 Roman.0bfb049d9455e81fd1da.otf",
+    "index.html": "/index.html",
+    "main.b7f1a22f.css.map": "/static/css/main.b7f1a22f.css.map",
+    "main.2a391322.js.map": "/static/js/main.2a391322.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7f1a22f.css",
+    "static/js/main.2a391322.js"
+  ]
+}

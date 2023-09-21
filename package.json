@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --forceExit",
+    "start:test": "cross-env NODE_ENV=test node index.js"
+  },
+  "author": "Dhiaa",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^5.3.1",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "imagekit": "^4.1.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.3",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.0.1",
+    "nodemon": "^2.0.19",
+    "prisma": "^5.3.1",
+    "supertest": "^6.2.4"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
