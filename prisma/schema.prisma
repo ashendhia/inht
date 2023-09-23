@@ -12,14 +12,14 @@ generator client {
 }
 
 model User {
-  id          String        @id @default(cuid())
-  email       String        @unique @db.VarChar(60)
-  name        String        @db.VarChar(60)
-  familyName  String        @db.VarChar(60)
-  password    String        @db.VarChar(60)
-  sexe        String        @db.VarChar(60)
-  phone       String        @db.VarChar(60)
-  Candidature Candidature[]
+  id           String        @id @default(cuid())
+  email        String        @unique @db.VarChar(60)
+  name         String        @db.VarChar(60)
+  familyName   String        @db.VarChar(60)
+  password     String        @db.VarChar(60)
+  sexe         String        @db.VarChar(60)
+  phone        String        @db.VarChar(60)
+  candidatures Candidature[]
 }
 
 model Candidature {
@@ -30,7 +30,7 @@ model Candidature {
   ts        Boolean  @default(false)
   wilaya    String   @db.VarChar(60)
   address   String   @db.VarChar(60)
-  status    Boolean  @default(false)
+  status    Boolean?
   createdAt DateTime @default(now())
   user      User     @relation(fields: [userId], references: [id])
 }

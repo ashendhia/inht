@@ -9,8 +9,22 @@ loginRouter.post('/', async (request, response) => {
     const user = await prisma.user.findUnique({
         where: {
             email: email
+        },
+        include: {
+            candidatures: {
+                select: {
+                    birthDate: true,
+                    specialty: true,
+                    ts: true,
+                    wilaya: true,
+                    address: true,
+                    status: true,
+                    createdAt: true,
+                }
+            }
         }
     })
+
     const passwordCorrect = user === null
         ? false
         : await bcrypt.compare(password, user.password)
@@ -28,6 +42,7 @@ loginRouter.post('/', async (request, response) => {
         name: user.name,
         sexe: user.sexe,
         phone: user.phone,
+        candidatures: user.candidatures
     }
 
     const userForToken = {
