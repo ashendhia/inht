@@ -9,7 +9,7 @@ const candidatureRouter = require('./controllers/candidature')
 const middleware = require('./utils/middleware')
 const logger = require('./utils/logger')
 
-logger.info('connecting to planetscale database')
+logger.info('connecting to xampp database')
 
 
 
